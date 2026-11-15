@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pdf Editor Craft – Free Online PDF Editor and Tools</title>
+<meta name="description" content="Edit PDF text, merge, split, rotate, and convert PDF files free in your browser. Files never leave your device.">
+<meta property="og:title" content="Pdf Editor Craft – Free Online PDF Editor and Tools">
+<meta property="og:description" content="Free PDF editor and tools that run in your browser. No upload, no sign-up.">
+<meta property="og:type" content="website">
+<meta name="keywords" content="free PDF editor, online PDF tools, merge PDF, split PDF, edit PDF online, convert PDF, rotate PDF, watermark PDF">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Pdf Editor Craft","applicationCategory":"BusinessApplication","operatingSystem":"Any web browser","description":"Free online PDF editor and tools: edit PDF text, merge, split, rotate, add page numbers and watermarks, and convert images to PDF. Files are processed in the browser and never uploaded.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Edit PDF text","Merge PDF","Extract pages","Remove pages","Rotate PDF","Image to PDF","Page numbers","Watermark"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my files uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Every tool runs inside your browser, so your PDF never leaves your device. Closing the page clears everything."}},{"@type":"Question","name":"Is Pdf Editor Craft free?","acceptedAnswer":{"@type":"Answer","text":"Yes. All tools are free, with no sign-up and no watermark added to your files."}},{"@type":"Question","name":"Can I edit text in any PDF?","acceptedAnswer":{"@type":"Answer","text":"You can edit text in PDFs that contain real text. Scanned PDFs need OCR, which is not available yet. Replacement text uses the Helvetica font and English letters."}},{"@type":"Question","name":"Is there a file size limit?","acceptedAnswer":{"@type":"Answer","text":"Each file can be up to 50 MB. Large files may be slow on older phones."}},{"@type":"Question","name":"Which PDF tools are available?","acceptedAnswer":{"@type":"Answer","text":"Edit PDF text, merge PDF, extract pages, remove pages, rotate PDF, image to PDF, page numbers, and watermark."}}]}]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--ink:#14173a;--mute:#5b6082;--line:#e4e6f0;--pri:#5b3df5;--pri2:#2f6bff;--ok:#12805c;--err:#c0262d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:70px;background:#fff}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+a{color:inherit}button,input,select{font:inherit;color:var(--ink)}
+:focus-visible{outline:3px solid var(--pri2);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;text-decoration:none}.logo svg{width:28px;height:32px}
+nav{display:flex;gap:18px;font-size:15px}nav a{text-decoration:none;color:var(--mute)}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.1;margin:38px 0 12px;letter-spacing:-.02em;max-width:15em}
+.sub{color:var(--mute);max-width:36em;margin:0 0 20px}
+h2.cat{margin:34px 0 12px;font-size:21px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px;box-shadow:0 2px 10px rgba(30,30,90,.05);transition:border-color .15s,box-shadow .15s}
+a.card:hover{border-color:var(--pri);box-shadow:0 6px 18px rgba(91,61,245,.14)}
+.card b{display:block}.card span{color:var(--mute);font-size:14px}
+.soon{opacity:.65}.tag{font-size:12px;color:var(--mute);border:1px solid var(--line);border-radius:20px;padding:1px 8px;margin-left:6px;font-weight:400}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:24px;box-shadow:0 8px 30px rgba(40,30,120,.07)}
+.panel h2{margin:6px 0 4px;font-size:24px}.panel p{margin:0 0 14px;color:var(--mute)}
+.back{color:var(--pri);text-decoration:none;font-weight:600;font-size:15px}
+.drop{display:block;border:2px dashed var(--line);border-radius:14px;padding:30px 16px;text-align:center;cursor:pointer}
+.drop.over,.drop:hover{border-color:var(--pri);background:#f6f4ff}
+.drop b{display:block;font-size:18px}.drop span{color:var(--mute);font-size:14px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;border:0;border-radius:11px;padding:11px 20px;font-weight:600;cursor:pointer;text-decoration:none}
+.btn:disabled{opacity:.45;cursor:not-allowed}.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}
+ul.files{list-style:none;margin:12px 0;padding:0}
+ul.files li{display:flex;gap:8px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;margin-bottom:6px;font-size:14px}
+ul.files .n{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}ul.files small{color:var(--mute)}
+ul.files button{border:0;background:none;cursor:pointer;color:var(--mute);padding:2px 7px;font-size:16px}
+.opts{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.opts label{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--mute)}
+.opts input,.opts select{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;min-width:150px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+#msg{margin-top:12px;min-height:24px;font-weight:600}#msg.ok{color:var(--ok)}#msg.err{color:var(--err)}
+.cv{position:relative;overflow:hidden;border:1px solid var(--line);margin:0 auto;background:#fff}
+.t{position:absolute;cursor:text;white-space:nowrap;overflow:hidden;line-height:1;border-radius:2px}
+.t:hover{outline:2px solid var(--pri2);background:rgba(47,107,255,.1)}
+.t.e{background:#fff;color:#000;font-family:Helvetica,Arial,sans-serif;outline:2px solid var(--ok)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.bar input{flex:1;min-width:180px;border:1px solid var(--pri);border-radius:9px;padding:9px 11px}
+.tabs{display:flex;gap:8px;overflow-x:auto;margin:20px 0 14px;padding-bottom:4px}.tabs button{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:20px;padding:7px 14px;cursor:pointer;font-weight:600;color:var(--mute)}.tabs button[aria-selected=true]{background:var(--pri);border-color:var(--pri);color:#fff}.btn.big{font-size:18px;padding:15px 30px}#chip{margin-top:12px;font-size:14px;color:var(--ok);font-weight:600}#chip button{margin-left:6px;border:0;background:none;color:var(--pri);cursor:pointer;font-weight:600;text-decoration:underline}.card{padding:13px}.card span{font-size:13px}
+h3{margin:40px 0 14px;font-size:22px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:8px}summary{cursor:pointer;font-weight:600}
+footer{margin-top:50px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);font-size:14px}
+.sel{position:relative;overflow:hidden}.sel input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:0}.sel.over{filter:brightness(1.12)}
+#tool{background:#f4f4f9;border:0;box-shadow:none;text-align:center;padding:26px 16px}#tool .sel{display:block;max-width:420px;margin:22px auto 0;font-size:22px;padding:22px 18px;border-radius:14px}#tool .opts,#tool .row{justify-content:center}#tool ul.files{text-align:left;max-width:520px;margin:14px auto}#tool .back{display:block;text-align:left}
+.srch{width:100%;margin-top:22px;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:16px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#home"><svg viewBox="0 0 30 34" aria-hidden="true"><path d="M3 2h16l8 8v22H3z" fill="#5b3df5"/><path d="M19 2v8h8z" fill="#2f6bff"/><path d="M8 18h14M8 23h14M8 28h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>Pdf Editor Craft</a>
+<nav><a href="#home">All tools</a><a href="#faq">FAQ</a></nav>
+</div></header>
+<main class="wrap">
+<section id="home">
+<h1>Everything You Need to Work With PDFs</h1>
+<p class="sub">Free PDF tools in your browser. Your files never leave your device.</p>
+<label class="btn big sel">Select PDF file<input id="hf" type="file" accept=".pdf,application/pdf" aria-label="Select PDF file"></label><div id="chip" hidden></div>
+<input class="srch" id="q" type="search" placeholder="Search tools: merge, edit, rotate…" aria-label="Search PDF tools">
+<div class="tabs" id="tabs" role="tablist" aria-label="Tool categories"></div>
+<div id="cats"></div>
+<h3 id="about">About Pdf Editor Craft</h3>
+<p>Pdf Editor Craft is a free online PDF editor and toolkit for students, teachers, freelancers, and office workers. It edits text in PDF files, merges, splits, rotates, and numbers pages, adds watermarks, and converts JPG and PNG images to PDF. Everything runs in your browser with the open-source libraries pdf-lib and PDF.js, so your documents are never uploaded to a server.</p>
+<h3 id="faq">FAQ</h3>
+<details><summary>Are my files uploaded anywhere?</summary><p>No. Every tool runs inside your browser. Closing the page clears everything.</p></details>
+<details><summary>Can I edit text in any PDF?</summary><p>You can edit text in PDFs that contain real text. Scanned PDFs (photos of pages) need OCR, which is coming later. Replacement text uses the Helvetica font and English letters.</p></details>
+<details><summary>Is there a file size limit?</summary><p>Each file can be up to 50 MB. Large files may be slow on older phones.</p></details>
+<details><summary>Is Pdf Editor Craft free?</summary><p>Yes. All tools are free, with no sign-up and no watermark added to your files.</p></details>
+<details><summary>Which PDF tools are available?</summary><p>Edit PDF text, merge PDF, extract pages, remove pages, rotate PDF, image to PDF, page numbers, and watermark.</p></details>
+</section>
+<section id="tool" class="panel" hidden></section>
+</main>
+<footer><div class="wrap">© Pdf Editor Craft. Your PDFs. Your Tools. One Simple Workspace.</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(function(){
+var L=window.PDFLib,P=window.pdfjsLib,MAX=50*1024*1024,PDF=".pdf,application/pdf";
+if(P)P.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+var T={
+edit:{n:"Edit PDF text",d:"Open a PDF, tap any text, change it, and download."},
+num:{n:"Page numbers",d:"Add a number at the bottom of every page.",acc:PDF,o:[["pos","Position","select",[["c","Center"],["r","Right"],["l","Left"]]]],run:nums},
+wm:{n:"Watermark",d:"Stamp text diagonally across every page.",acc:PDF,o:[["txt","Watermark text","text","CONFIDENTIAL"]],run:wm},
+merge:{n:"Merge PDF",d:"Combine several PDFs into one, in the order listed.",acc:PDF,multi:1,min:2,run:merge},
+split:{n:"Extract pages",d:"Keep only the pages you choose, for example 1-3,5.",acc:PDF,o:[["range","Pages to keep","text","1-3,5"]],run:function(f,o){return pick(f[0],o.range,true)}},
+remove:{n:"Remove pages",d:"Delete the pages you list and keep the rest.",acc:PDF,o:[["range","Pages to remove","text","2,4-5"]],run:function(f,o){return pick(f[0],o.range,false)}},
+rotate:{n:"Rotate PDF",d:"Turn every page by the angle you choose.",acc:PDF,o:[["deg","Rotate","select",[["90","90° right"],["180","180°"],["270","90° left"]]]],run:rotate},
+img:{n:"Image to PDF",d:"Turn JPG or PNG images into one PDF, one image per page.",acc:".jpg,.jpeg,.png,image/jpeg,image/png",multi:1,min:1,run:img}
+};
+var C=[["Edit PDF",["edit","num","wm"]],["Organize PDF",["merge","split","remove","rotate"]],["Convert to PDF",["img"]]];
+var SOON=[["Convert from PDF",[["PDF to JPG","Turn pages into images."],["PDF to Text","Copy all text out."]]],["Optimize and secure",[["Compress PDF","Make large files smaller."],["Protect PDF","Lock a file with a password."]]],["Advanced",[["OCR PDF","Read text from scanned pages."],["Compare PDFs","Spot differences between versions."]]]];
+var $=function(i){return document.getElementById(i)},home=$("home"),pane=$("tool");
+$("cats").innerHTML=C.map(function(c){return"<h2 class='cat'>"+c[0]+"</h2><div class='grid'>"+c[1].map(function(i){return"<a class='card' href='#"+i+"'><b>"+T[i].n+"</b><span>"+T[i].d+"</span></a>"}).join("")+"</div>"}).join("")+SOON.map(function(c){return"<h2 class='cat'>"+c[0]+"</h2><div class='grid'>"+c[1].map(function(s){return"<div class='card soon'><b>"+s[0]+"<span class='tag'>coming soon</span></b><span>"+s[1]+"</span></div>"}).join("")+"</div>"}).join("");
+var pend=null,tab="All";
+function cats(){
+ var all=["All"].concat(C.map(function(c){return c[0]}),["Coming soon"]);
+ $("tabs").innerHTML=all.map(function(n){return"<button role='tab' aria-selected='"+(n===tab)+"' data-t='"+n+"'>"+n+"</button>"}).join("");
+ [].forEach.call($("tabs").children,function(b){b.onclick=function(){tab=b.dataset.t;cats()}});
+ var h="",q=($("q").value||"").toLowerCase().trim(),ok=function(t){return!q||(t[0]+" "+t[1]).toLowerCase().indexOf(q)>-1};
+ C.forEach(function(c){if(tab==="All"||tab===c[0])h+=c[1].filter(function(i){return ok([T[i].n,T[i].d])}).map(function(i){return"<a class='card' href='#"+i+"'><b>"+T[i].n+"</b><span>"+T[i].d+"</span></a>"}).join("")});
+ if(tab==="All"||tab==="Coming soon")SOON.forEach(function(c){c[1].forEach(function(s){if(ok(s))h+="<div class='card soon'><b>"+s[0]+"</b><span>Coming soon</span></div>"})});
+ $("cats").innerHTML=h?"<div class='grid'>"+h+"</div>":"<p>No tool found. Try “merge”, “edit”, or “rotate”.</p>"}
+cats();
+function chip(){var c=$("chip");c.hidden=!pend;if(!pend)return;c.textContent="Ready: "+pend.name+" ("+sz(pend.size)+"). Now choose a tool below. ";var b=document.createElement("button");b.textContent="Clear";b.onclick=function(){pend=null;chip()};c.appendChild(b)}
+$("q").oninput=function(){tab="All";cats()};
+$("hf").onchange=function(){var f=this.files[0];this.value="";if(!f)return;if(!/\.pdf$/i.test(f.name)||f.size>MAX){pend=null;var c=$("chip");c.hidden=false;c.textContent="Please choose a PDF file under 50 MB.";return}pend=f;chip();location.hash="edit"};
+var cur,files=[],url=null,E={},back="<a class='back' href='#home'>← All tools</a>";
+function route(){var id=location.hash.slice(1);cleanup();if(T[id]){cur=id;document.title=T[id].n+" – Free Online | Pdf Editor Craft";home.hidden=true;pane.hidden=false;id==="edit"?drawEd():draw();if(pend&&(id==="edit"||T[id].acc===PDF)){var pf=pend;id==="edit"?openEd(pf):add([pf])}window.scrollTo(0,0)}else{document.title="Pdf Editor Craft – Free Online PDF Editor and Tools";pane.hidden=true;home.hidden=false;var f=T[id]?0:id==="faq"?$("faq"):0;if(f)f.scrollIntoView()}}
+window.addEventListener("hashchange",route);
+function cleanup(){files=[];if(url){URL.revokeObjectURL(url);url=null}E={}}
+function msg(t,c){var m=$("msg");if(m){m.textContent=t;m.className=c||""}}
+function sz(n){return n>1048576?(n/1048576).toFixed(1)+" MB":Math.max(1,Math.round(n/1024))+" KB"}
+function dropHtml(multi,acc){return"<label class='btn big sel' id='drop'>"+(acc===PDF?"Select PDF file"+(multi?"s":""):"Select images")+"<input type='file' "+(multi?"multiple":"")+" accept='"+acc+"' aria-label='Select file'></label>"}
+function wire(cb){var dr=$("drop"),inp=dr.querySelector("input");inp.onchange=function(){cb(inp.files);inp.value=""};["dragover","dragenter"].forEach(function(e){dr.addEventListener(e,function(v){v.preventDefault();dr.classList.add("over")})});["dragleave","drop"].forEach(function(e){dr.addEventListener(e,function(){dr.classList.remove("over")})});dr.addEventListener("drop",function(v){v.preventDefault();cb(v.dataTransfer.files)})}
+function draw(){
+ var t=T[cur],o=(t.o||[]).map(function(x){var f=x[2]==="select"?"<select name='"+x[0]+"'>"+x[3].map(function(v){return"<option value='"+v[0]+"'>"+v[1]+"</option>"}).join("")+"</select>":"<input name='"+x[0]+"' value='"+x[3]+"'>";return"<label>"+x[1]+f+"</label>"}).join("");
+ pane.innerHTML=back+"<h2>"+t.n+"</h2><p>"+t.d+"</p>"+dropHtml(t.multi,t.acc)+"<ul class='files' id='list'></ul><div id='after' hidden><div class='opts'>"+o+"</div><div class='row'><button class='btn' id='go' disabled>"+t.n+"</button><button class='btn alt' id='rs'>Reset</button></div></div><div id='msg' role='status'></div>";
+ wire(add);$("rs").onclick=route;$("go").onclick=go;
+}
+function add(fl){var t=T[cur],ok=cur==="img"?/\.(jpe?g|png)$/i:/\.pdf$/i,bad=0;
+ [].forEach.call(fl,function(f){if(!ok.test(f.name)){bad++;return}if(f.size>MAX){msg(f.name+" is over 50 MB.","err");return}if(!t.multi)files=[];files.push(f)});
+ if(bad)msg(bad+" file(s) skipped: wrong file type.","err");list()}
+function list(){var u=$("list");u.innerHTML="";
+ files.forEach(function(f,i){var d=document.createElement("div");d.innerHTML="<li><span class='n'></span><small>"+sz(f.size)+"</small><button aria-label='Move up'>↑</button><button aria-label='Remove'>✕</button></li>";var li=d.firstChild;li.firstChild.textContent=f.name;var b=li.querySelectorAll("button");b[0].onclick=function(){if(i){files.splice(i-1,0,files.splice(i,1)[0]);list()}};b[1].onclick=function(){files.splice(i,1);list()};u.appendChild(li)});
+ $("go").disabled=files.length<(T[cur].min||1);$("after").hidden=!files.length}
+function go(){var o={};[].forEach.call(pane.querySelectorAll(".opts [name]"),function(i){o[i.name]=i.value});
+ var b=$("go");b.disabled=true;msg("Working…");done(Promise.resolve().then(function(){return T[cur].run(files,o)}),b)}
+function done(pr,b){var d=$("dl");if(d)d.remove();
+ pr.then(async function(bytes){if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));var a=document.createElement("a");a.id="dl";a.className="btn";a.download="pdf-editor-craft-"+cur+".pdf";a.textContent="Download PDF";a.href=url;var dl=null;try{dl=window.claude&&await window.claude.use("downloads")}catch(e){}if(dl)a.onclick=function(v){v.preventDefault();dl.save({filename:a.download,data:new Blob([bytes],{type:"application/pdf"})}).then(function(){msg("Saved to your device.","ok")}).catch(function(e){if(!e||e.code!=="declined")msg("Could not save the file. Please try again.","err")})};b.parentNode.appendChild(a);msg("Done. Your PDF is ready.","ok");b.disabled=false})
+ .catch(function(e){msg(e&&e.message?e.message:"Something went wrong. Check the file and try again.","err");b.disabled=false})}
+/* ---------- text editor ---------- */
+function drawEd(){
+ pane.innerHTML=back+"<h2>Edit PDF text</h2><p>Open a PDF, tap any text on the page, change it, then save. Works on PDFs with real text, not scans. New text uses Helvetica.</p>"+dropHtml(0,PDF)+"<div id='ed' hidden><div class='row' style='margin:0 0 10px'><button class='btn alt' id='pv'>‹ Prev</button><span id='pg' style='align-self:center'></span><button class='btn alt' id='nx'>Next ›</button></div><div id='bar' class='bar' hidden></div><div class='cv' id='cv'></div><div class='row'><button class='btn' id='go'>Save edited PDF</button><button class='btn alt' id='rs'>Start over</button></div></div><div id='msg' role='status'></div>";
+ wire(function(fl){openEd(fl[0])});$("rs").onclick=route;
+ $("pv").onclick=function(){if(E.p>1){E.p--;render()}};$("nx").onclick=function(){if(E.p<E.n){E.p++;render()}};
+ $("go").onclick=function(){var b=$("go");b.disabled=true;msg("Saving…");done(save(),b)};
+}
+async function openEd(f){
+ if(!f)return;if(!/\.pdf$/i.test(f.name))return msg("Please choose a PDF file.","err");if(f.size>MAX)return msg("File is over 50 MB.","err");
+ if(!P)return msg("The PDF viewer could not load. Check your connection and reload.","err");
+ try{msg("Opening…");E.buf=await f.arrayBuffer();E.doc=await P.getDocument({data:new Uint8Array(E.buf.slice(0))}).promise;E.n=E.doc.numPages;E.p=1;E.ed={};
+ $("drop").hidden=true;$("ed").hidden=false;msg("");await render()}catch(e){msg("This PDF could not be opened. It may be damaged or password-protected.","err")}}
+async function render(){
+ var pg=await E.doc.getPage(E.p),w0=pg.getViewport({scale:1}),sc=Math.min(pane.clientWidth-44,900)/w0.width,vp=pg.getViewport({scale:sc}),cv=$("cv");
+ $("pg").textContent="Page "+E.p+" of "+E.n;$("bar").hidden=true;cv.innerHTML="";cv.style.width=vp.width+"px";cv.style.height=vp.height+"px";
+ var c=document.createElement("canvas");c.width=vp.width;c.height=vp.height;cv.appendChild(c);
+ await pg.render({canvasContext:c.getContext("2d"),viewport:vp}).promise;
+ var tc=await pg.getTextContent();
+ tc.items.forEach(function(it,i){if(!it.str||!it.str.trim())return;var x=P.Util.transform(vp.transform,it.transform),fh=Math.hypot(x[2],x[3]),d=document.createElement("div"),k=E.p+"-"+i;d.className="t";d.tabIndex=0;d.setAttribute("role","button");
+  d.style.cssText="left:"+x[4]+"px;top:"+(x[5]-fh*.93)+"px;width:"+it.width*sc+"px;height:"+fh*1.15+"px;font-size:"+fh+"px";
+  var paint=function(){var e=E.ed[k];d.className=e?"t e":"t";d.textContent=e?e.t:"";d.setAttribute("aria-label",e?"Edited text: "+e.t:"Edit text: "+it.str)};paint();
+  var open=function(){bar(k,it,paint)};d.onclick=open;d.onkeydown=function(v){if(v.key==="Enter")open()};cv.appendChild(d)})
+}
+function bar(k,it,paint){var b=$("bar"),e=E.ed[k];b.hidden=false;b.innerHTML="<input id='bi' aria-label='New text'><button class='btn' id='ba'>Apply</button><button class='btn alt' id='bu'>Undo</button>";
+ var i=$("bi");i.value=e?e.t:it.str;i.focus();
+ var ap=function(){var v=i.value;if(/[^\x20-\x7E\xA0-\xFF]/.test(v))return msg("Only English (Latin) letters are supported for now.","err");E.ed[k]={p:+k.split("-")[0],t:v,it:it};paint();b.hidden=true;msg("")};
+ $("ba").onclick=ap;i.onkeydown=function(v){if(v.key==="Enter")ap()};$("bu").onclick=function(){delete E.ed[k];paint();b.hidden=true;msg("")}}
+async function save(){
+ var d=await L.PDFDocument.load(E.buf),h=await d.embedFont(L.StandardFonts.Helvetica),pg=d.getPages(),n=0;
+ Object.keys(E.ed).forEach(function(k){var e=E.ed[k],t=e.it.transform,s=Math.hypot(t[2],t[3]),p=pg[e.p-1];n++;
+  p.drawRectangle({x:t[4]-1,y:t[5]-s*.22,width:Math.max(e.it.width,h.widthOfTextAtSize(e.t,s))+2,height:s*1.15,color:L.rgb(1,1,1)});
+  if(e.t)p.drawText(e.t,{x:t[4],y:t[5],size:s,font:h,color:L.rgb(0,0,0)})});
+ if(!n)throw new Error("Make at least one edit first.");return d.save()}
+/* ---------- other tools ---------- */
+function buf(f){return f.arrayBuffer()}
+function load(f){return buf(f).then(function(b){return L.PDFDocument.load(b)}).catch(function(){throw new Error(f.name+" could not be opened. It may be damaged or password-protected.")})}
+function parse(s,n){var set={};if(!s.trim())throw new Error("Enter page numbers, for example 1-3,5.");
+ s.split(",").forEach(function(p){p=p.trim();var m=p.match(/^(\d+)(?:\s*-\s*(\d+))?$/);if(!m)throw new Error("“"+p+"” is not a valid page or range.");var a=+m[1],b=m[2]?+m[2]:a;if(a<1||b<a||b>n)throw new Error("Pages must be between 1 and "+n+".");for(var i=a;i<=b;i++)set[i-1]=1});
+ return Object.keys(set).map(Number).sort(function(a,b){return a-b})}
+async function merge(f){var out=await L.PDFDocument.create();for(var i=0;i<f.length;i++){var d=await load(f[i]);(await out.copyPages(d,d.getPageIndices())).forEach(function(p){out.addPage(p)})}return out.save()}
+async function pick(f,s,keep){var d=await load(f),sel=parse(s,d.getPageCount());if(!keep){var r={};sel.forEach(function(i){r[i]=1});sel=d.getPageIndices().filter(function(i){return!r[i]});if(!sel.length)throw new Error("You can't remove every page.")}var out=await L.PDFDocument.create();(await out.copyPages(d,sel)).forEach(function(p){out.addPage(p)});return out.save()}
+async function rotate(f,o){var d=await load(f[0]);d.getPages().forEach(function(p){p.setRotation(L.degrees((p.getRotation().angle+ +o.deg)%360))});return d.save()}
+async function img(f){var out=await L.PDFDocument.create();for(var i=0;i<f.length;i++){var b=await buf(f[i]),im;try{im=/\.png$/i.test(f[i].name)?await out.embedPng(b):await out.embedJpg(b)}catch(e){throw new Error(f[i].name+" could not be read as an image.")}out.addPage([im.width,im.height]).drawImage(im,{x:0,y:0,width:im.width,height:im.height})}return out.save()}
+async function nums(f,o){var d=await load(f[0]),h=await d.embedFont(L.StandardFonts.Helvetica),n=d.getPageCount();d.getPages().forEach(function(p,i){var w=p.getWidth(),t=(i+1)+" / "+n,tw=h.widthOfTextAtSize(t,10);p.drawText(t,{x:o.pos==="l"?30:o.pos==="r"?w-30-tw:(w-tw)/2,y:20,size:10,font:h,color:L.rgb(.3,.3,.3)})});return d.save()}
+async function wm(f,o){var t=(o.txt||"").trim();if(!t)throw new Error("Enter the watermark text.");if(/[^\x20-\x7E]/.test(t))throw new Error("Watermark supports English letters, numbers, and symbols for now.");var d=await load(f[0]),h=await d.embedFont(L.StandardFonts.HelveticaBold);d.getPages().forEach(function(p){var w=p.getWidth(),ht=p.getHeight(),s=Math.min(70,w*1.4/t.length),tw=h.widthOfTextAtSize(t,s),k=Math.SQRT1_2;p.drawText(t,{x:w/2-tw/2*k,y:ht/2-tw/2*k,size:s,font:h,color:L.rgb(.5,.5,.6),opacity:.3,rotate:L.degrees(45)})});return d.save()}
+if(!L)document.body.insertAdjacentHTML("afterbegin","<p style='padding:18px'>The PDF library could not load. Check your connection and reload.</p>");
+route();
+})();
+</script>
+</body>
+</html>
